@@ -1,0 +1,14 @@
+syntax = "proto3";
+package proto;
+
+option go_package = "./pb";
+
+import "proto/task_message.proto";
+
+service TaskService {
+    rpc List(TaskListRequest) returns (TaskListResponse);
+    rpc Create(TaskCreateRequest) returns (TaskCreateResponse);
+    rpc Detail(TaskDetailRequest) returns (TaskDetailResponse);
+    rpc Put(TaskPutRequest) returns (TaskPutResponse);
+    rpc Delete(TaskDeleteRequest) returns (TaskDeleteResponse);
+}

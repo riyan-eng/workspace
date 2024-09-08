@@ -1,0 +1,50 @@
+syntax = "proto3";
+package proto;
+
+option go_package = "./pb";
+
+import "proto/task_datastruct.proto";
+
+message TaskCreateRequest {
+    string id = 1;
+    string name = 2;
+    string detail = 3;
+}
+
+message TaskCreateResponse {
+}
+
+message TaskListRequest {
+    string search = 1;
+    int32 limit = 2;
+    int32 offset = 3;
+}
+
+message TaskListResponse {
+    repeated TaskList data = 1;
+    int32 total_rows = 2;
+}
+
+message TaskDetailRequest {
+    string id = 1;
+}
+
+message TaskDetailResponse {
+    TaskDetail data = 1;
+}
+
+message TaskPutRequest {
+    string id = 1;
+    string name = 2;
+    string detail = 3;
+}
+
+message TaskPutResponse {
+}
+
+message TaskDeleteRequest {
+    string id = 1;
+}
+
+message TaskDeleteResponse {
+}

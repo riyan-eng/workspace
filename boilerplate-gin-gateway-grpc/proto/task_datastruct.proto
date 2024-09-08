@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+
+option go_package = "./pb";
+
+message TaskList {
+    string id = 1;
+    string name = 2;
+    string detail = 3;
+}
+
+message TaskDetail {
+    string id = 1;
+    string name = 2;
+    string detail = 3;
+}

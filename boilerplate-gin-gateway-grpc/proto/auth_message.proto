@@ -1,0 +1,47 @@
+syntax = "proto3";
+package proto;
+
+option go_package = "./pb";
+
+message AuthLoginRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message AuthLoginResponse {
+    string access_token = 1;
+    string access_expired = 2;
+    string refresh_token = 3;
+    string refresh_expired = 4;
+    string username = 5;
+}
+
+message AuthLogoutRequest {
+    string token = 1;
+}
+
+message AuthLogoutResponse {
+}
+
+message AuthMeRequest {
+    string token = 1;
+}
+
+message AuthMeResponse {
+    string id = 1;
+    string username = 2;
+    string role_code = 3;
+    string role_name = 4;
+}
+
+message AuthRefreshRequest {
+    string token = 1;
+}
+
+message AuthRefreshResponse {
+    string access_token = 1;
+    string access_expired = 2;
+    string refresh_token = 3;
+    string refresh_expired = 4;
+    string username = 5;
+}

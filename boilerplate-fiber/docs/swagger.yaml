@@ -1,0 +1,351 @@
+definitions:
+  dto.AuthLogin:
+    properties:
+      password:
+        type: string
+      username:
+        type: string
+    type: object
+  dto.AuthRefresh:
+    properties:
+      token:
+        type: string
+    type: object
+  dto.PerangkatCreate:
+    properties:
+      alamat:
+        type: string
+      jabatan_code:
+        type: string
+      photo_url:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+      username:
+        type: string
+    type: object
+  dto.PerangkatPatch:
+    properties:
+      alamat:
+        type: string
+      jabatan_code:
+        type: string
+      photo_url:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+      username:
+        type: string
+    type: object
+  dto.PerangkatResetPassword:
+    properties:
+      password:
+        type: string
+    type: object
+info:
+  contact:
+    name: hertz-contrib
+    url: https://github.com/hertz-contrib
+  description: This is a Sisambi Api Documentation.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: Sisambi
+  version: "1.0"
+paths:
+  /auth/login/:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/dto.AuthLogin'
+      produces:
+      - application/json
+      responses: {}
+      summary: Login
+      tags:
+      - Authentication
+  /auth/logout/:
+    delete:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Logout
+      tags:
+      - Authentication
+  /auth/me/:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Me
+      tags:
+      - Authentication
+  /auth/refresh/:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/dto.AuthRefresh'
+      produces:
+      - application/json
+      responses: {}
+      summary: Refresh
+      tags:
+      - Authentication
+  /example/:
+    get:
+      parameters:
+      - default: desc
+        description: desc/asc default(desc)
+        in: query
+        name: order
+        type: string
+      - description: search
+        in: query
+        name: search
+        type: string
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: per_page
+        in: query
+        name: per_page
+        type: integer
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: List
+      tags:
+      - Example
+  /example/{id}/:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Detail
+      tags:
+      - Example
+  /object/:
+    post:
+      parameters:
+      - description: File
+        in: formData
+        name: file
+        required: true
+        type: file
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Upload
+      tags:
+      - Object
+  /object/{id}/:
+    delete:
+      consumes:
+      - application/json
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Remove
+      tags:
+      - Object
+  /object/{id}/{name}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: fill with random
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: View
+      tags:
+      - Object
+  /perangkat/:
+    get:
+      parameters:
+      - description: search
+        in: query
+        name: search
+        type: string
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: per_page
+        in: query
+        name: per_page
+        type: integer
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: List
+      tags:
+      - Perangkat
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/dto.PerangkatCreate'
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Create
+      tags:
+      - Perangkat
+  /perangkat/{id}/:
+    delete:
+      consumes:
+      - application/json
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Delete
+      tags:
+      - Perangkat
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Detail
+      tags:
+      - Perangkat
+    patch:
+      consumes:
+      - application/json
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/dto.PerangkatPatch'
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Patch
+      tags:
+      - Perangkat
+  /perangkat/{id}/reset-password/:
+    patch:
+      consumes:
+      - application/json
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/dto.PerangkatResetPassword'
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - ApiKeyAuth: []
+      summary: Reset Password
+      tags:
+      - Perangkat
+schemes:
+- https
+- http
+securityDefinitions:
+  ApiKeyAuth:
+    description: Bearer access token here
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

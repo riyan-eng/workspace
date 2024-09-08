@@ -1,0 +1,13 @@
+syntax = "proto3";
+package proto;
+
+option go_package = "./pb";
+
+import "proto/auth_message.proto";
+
+service AuthService {
+    rpc Login(AuthLoginRequest) returns (AuthLoginResponse);
+    rpc Logout(AuthLogoutRequest) returns (AuthLogoutResponse);
+    rpc Me(AuthMeRequest) returns (AuthMeResponse);
+    rpc Refresh(AuthRefreshRequest) returns (AuthRefreshResponse);
+}

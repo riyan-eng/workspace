@@ -1,0 +1,127 @@
+[HelloPerson]
+description = "The number of unread emails I have"
+other = "I have unread emails."
+
+[PersonUnreadEmails]
+description = "The number of unread emails a person has"
+other = "{{.Name}} has {{.UnreadEmailCount}} unread emails."
+
+[WELCOME]
+other = "Welcome to Golang Boilerplate One APIs"
+
+[OK_CREATE]              
+other = "Successfully insert data."
+
+[OK_DELETE]             
+other = "Successfully delete data."
+
+[OK_UPDATE]             
+other = "Successfully update data."
+
+[OK_READ]               
+other = "Successfully display data."
+
+[OK_IMPORT]             
+other = "Successfully import data."
+
+[OK_EXPORT]             
+other = "Successfully export data."
+
+[OK_UPLOAD]             
+other = "Successfully upload data."
+
+[OK_LOGIN]              
+other = "Successfully log in."
+
+[OK_REFRESH]             
+other = "Successfully refresh token."
+
+[OK_LOGOUT]             
+other = "Successfully log out."
+
+[OK_REQUEST_TOKEN_RESET] 
+other = "Successfully request token."
+
+[OK_CHANGE_PASSWORD]     
+other = "Successfully update password."
+
+[FAILED_CREATE]          
+other = "Failed to insert data."
+
+[FAILED_DELETE]          
+other = "Failed to delete data."
+
+[FAILED_UPDATE]          
+other = "Failed to update data."
+
+[FAILED_CREATE_NO_DATA]          
+other = "No data entered."
+
+[FAILED_DELETE_NO_DATA]          
+other = "No data deleted."
+
+[FAILED_UPDATE_NO_DATA]          
+other = "No data updated."
+
+[FAILED_READ]            
+other = "Failed to display data."
+
+[FAILED_IMPORT]          
+other = "Failed to import data."
+
+[FAILED_EXPORT]          
+other = "Failed to export data."
+
+[FAILED_VALIDATION]      
+other = "Failed to validate data."
+
+[BAD_REQUEST]            
+other = "Bad request."
+
+[BAD_SYSTEM]             
+other = "Server error."
+
+[UNAUTHORIZED]           
+other = "Unauthorized."
+
+[CONFLICT]               
+other = "Data already exists."
+
+[NOT_FOUND]              
+other = "Data not found."
+
+[FAILED_LOGIN]           
+other = "Incorrect username or password."
+
+[M_VAL_REQUIRED]
+other = "The field is required"
+
+[M_VAL_EMAIL]
+other = "The field must be a valid email address"
+
+[M_VAL_URL]
+other = "The field format is invalid"
+
+[M_VAL_BOOL]
+other = "The field only contain boolean value"
+
+[M_VAL_MIN]
+other = "The field must be minimum {{.min_char}} char"
+
+[M_VAL_DATE]
+other = "The field must be a valid date format. e.g: {{.date_format}}"
+
+[M_VAL_IN]
+other = "The field must be one of {{.in_char}}"
+
+[M_VAL_DIGIT]
+other = "The field must be {{.digits}} digits"
+
+[M_VAL_NUMERIC]
+other = "The field must be numeric"
+
+[M_VAL_FLOAT]
+other = "The field must be numeric"
+
+[M_VAL_MAX]
+other = "The field must be maximum {{.max_char}} char"

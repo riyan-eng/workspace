@@ -1,0 +1,127 @@
+[HelloPerson]
+description = "Jumlah email yang belum dibaca yang saya miliki"
+other = "Saya memiliki email yang belum dibaca."
+
+[PersonUnreadEmails]
+description = "Jumlah email yang belum dibaca yang dimiliki seseorang"
+other = "{{.Name}} memiliki {{.UnreadEmailCount}} email yang belum dibaca."
+
+[WELCOME]
+other = "Selamat datang di API Golang Boilerplate One"
+
+[OK_CREATE]              
+other = "Berhasil memasukkan data."
+
+[OK_DELETE]             
+other = "Berhasil menghapus data."
+
+[OK_UPDATE]             
+other = "Berhasil memperbaharui data."
+
+[OK_READ]               
+other = "Berhasil menampilkan data."
+
+[OK_IMPORT]             
+other = "Berhasil mengimpor data."
+
+[OK_EXPORT]             
+other = "Berhasil mengekspor data."
+
+[OK_UPLOAD]             
+other = "Berhasil mengunggah data."
+
+[OK_LOGIN]              
+other = "Berhasil masuk."
+
+[OK_REFRESH]             
+other = "Berhasil menyegarkan token."
+
+[OK_LOGOUT]             
+other = "Berhasil keluar."
+
+[OK_REQUEST_TOKEN_RESET] 
+other = "Berhasil meminta token."
+
+[OK_CHANGE_PASSWORD]     
+other = "Berhasil memperbaharui kata sandi."
+
+[FAILED_CREATE]          
+other = "Gagal memasukkan data."
+
+[FAILED_DELETE]          
+other = "Gagal menghapus data."
+
+[FAILED_UPDATE]          
+other = "Gagal memperbarui data."
+
+[FAILED_CREATE_NO_DATA]          
+other = "Tidak ada data yang dimasukkan."
+
+[FAILED_DELETE_NO_DATA]          
+other = "Tidak ada data yang dihapus."
+
+[FAILED_UPDATE_NO_DATA]          
+other = "Tidak ada data yang diperbaharui."
+
+[FAILED_READ]            
+other = "Gagal menampilkan data."
+
+[FAILED_IMPORT]          
+other = "Gagal mengimpor data."
+
+[FAILED_EXPORT]          
+other = "Gagal mengekspor data."
+
+[FAILED_VALIDATION]      
+other = "Gagal memvalidasi data."
+
+[BAD_REQUEST]            
+other = "Permintaan buruk."
+
+[BAD_SYSTEM]             
+other = "Kesalahan server."
+
+[UNAUTHORIZED]           
+other = "Tidak diizinkan."
+
+[CONFLICT]               
+other = "Data sudah ada."
+
+[NOT_FOUND]              
+other = "Data tidak ditemukan."
+
+[FAILED_LOGIN]           
+other = "Nama pengguna atau kata sandi salah."
+
+[M_VAL_REQUIRED]
+other = "Kolom ini diperlukan"
+
+[M_VAL_EMAIL]
+other = "Kolom ini harus berupa alamat email yang valid"
+
+[M_VAL_URL]
+other = "Format kolom ini tidak valid"
+
+[M_VAL_BOOL]
+other = "Kolom ini hanya boleh berisi nilai boolean"
+
+[M_VAL_MIN]
+other = "Kolom ini harus minimal {{.min_char}} karakter"
+
+[M_VAL_DATE]
+other = "Kolom ini harus dalam format tanggal yang valid. Misal: {{.date_format}}"
+
+[M_VAL_IN]
+other = "Kolom ini harus salah satu dari {{.in_char}}"
+
+[M_VAL_DIGIT]
+other = "Kolom ini harus terdiri dari {{.digits}} digit"
+
+[M_VAL_NUMERIC]
+other = "Kolom ini harus berupa angka"
+
+[M_VAL_FLOAT]
+other = "Kolom ini harus berupa angka"
+
+[M_VAL_MAX]
+other = "Kolom ini harus maksimal {{.max_char}} karakter"

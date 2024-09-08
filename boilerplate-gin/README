@@ -1,0 +1,1 @@
+jika request parameter lebih dari 3, gunakan struct. kecuali parameter di service, wajib menggunakan struct entity

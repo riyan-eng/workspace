@@ -1,0 +1,45 @@
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/docs/*any                --> handlerName=github.com/hertz-contrib/swagger.CustomWrapHandler.func1 (num=2 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/                         --> handlerName=server/internal/api.(*ServiceServer).Index-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=POST   absolutePath=/auth/login/              --> handlerName=server/internal/api.(*ServiceServer).AuthLogin-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=POST   absolutePath=/auth/refresh/            --> handlerName=server/internal/api.(*ServiceServer).AuthRefresh-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/auth/me/                 --> handlerName=server/internal/api.(*ServiceServer).AuthMe-fm (num=9 handlers)"}
+{"level":"debug","message":"HERTZ: Method=DELETE absolutePath=/auth/logout/             --> handlerName=server/internal/api.(*ServiceServer).AuthLogout-fm (num=9 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/example/                 --> handlerName=server/internal/api.(*ServiceServer).ExampleList-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/example/:id/             --> handlerName=server/internal/api.(*ServiceServer).ExampleDetail-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/perangkat/               --> handlerName=server/internal/api.(*ServiceServer).PerangkatList-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=POST   absolutePath=/perangkat/               --> handlerName=server/internal/api.(*ServiceServer).PerangkatCreate-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/perangkat/:id/           --> handlerName=server/internal/api.(*ServiceServer).PerangkatDetail-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=PATCH  absolutePath=/perangkat/:id/           --> handlerName=server/internal/api.(*ServiceServer).PerangkatPatch-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=PATCH  absolutePath=/perangkat/:id/reset-password/ --> handlerName=server/internal/api.(*ServiceServer).PerangkatResetPassword-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=DELETE absolutePath=/perangkat/:id/           --> handlerName=server/internal/api.(*ServiceServer).PerangkatDelete-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/object/:id/:name         --> handlerName=server/internal/api.(*ServiceServer).ObjectView-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=POST   absolutePath=/object/                  --> handlerName=server/internal/api.(*ServiceServer).ObjectUpload-fm (num=9 handlers)"}
+{"level":"debug","message":"HERTZ: Method=DELETE absolutePath=/object/:id/              --> handlerName=server/internal/api.(*ServiceServer).ObjectRemove-fm (num=9 handlers)"}
+{"level":"info","message":"HERTZ: Using network library=netpoll"}
+{"level":"info","message":"HERTZ: HTTP server listening on address=[::]:3000"}
+{"level":"info","message":"HERTZ: Received signal: interrupt\n"}
+{"level":"info","message":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds..."}
+{"level":"info","message":"HERTZ: Execute OnShutdownHooks timeout: error=context deadline exceeded"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/docs/*any                --> handlerName=github.com/hertz-contrib/swagger.CustomWrapHandler.func1 (num=2 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/                         --> handlerName=server/internal/api.(*ServiceServer).Index-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=POST   absolutePath=/auth/login/              --> handlerName=server/internal/api.(*ServiceServer).AuthLogin-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=POST   absolutePath=/auth/refresh/            --> handlerName=server/internal/api.(*ServiceServer).AuthRefresh-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/auth/me/                 --> handlerName=server/internal/api.(*ServiceServer).AuthMe-fm (num=9 handlers)"}
+{"level":"debug","message":"HERTZ: Method=DELETE absolutePath=/auth/logout/             --> handlerName=server/internal/api.(*ServiceServer).AuthLogout-fm (num=9 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/example/                 --> handlerName=server/internal/api.(*ServiceServer).ExampleList-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/example/:id/             --> handlerName=server/internal/api.(*ServiceServer).ExampleDetail-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/perangkat/               --> handlerName=server/internal/api.(*ServiceServer).PerangkatList-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=POST   absolutePath=/perangkat/               --> handlerName=server/internal/api.(*ServiceServer).PerangkatCreate-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/perangkat/:id/           --> handlerName=server/internal/api.(*ServiceServer).PerangkatDetail-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=PATCH  absolutePath=/perangkat/:id/           --> handlerName=server/internal/api.(*ServiceServer).PerangkatPatch-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=PATCH  absolutePath=/perangkat/:id/reset-password/ --> handlerName=server/internal/api.(*ServiceServer).PerangkatResetPassword-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=DELETE absolutePath=/perangkat/:id/           --> handlerName=server/internal/api.(*ServiceServer).PerangkatDelete-fm (num=10 handlers)"}
+{"level":"debug","message":"HERTZ: Method=GET    absolutePath=/object/:id/:name         --> handlerName=server/internal/api.(*ServiceServer).ObjectView-fm (num=8 handlers)"}
+{"level":"debug","message":"HERTZ: Method=POST   absolutePath=/object/                  --> handlerName=server/internal/api.(*ServiceServer).ObjectUpload-fm (num=9 handlers)"}
+{"level":"debug","message":"HERTZ: Method=DELETE absolutePath=/object/:id/              --> handlerName=server/internal/api.(*ServiceServer).ObjectRemove-fm (num=9 handlers)"}
+{"level":"info","message":"HERTZ: Using network library=netpoll"}
+{"level":"info","message":"HERTZ: HTTP server listening on address=[::]:3000"}
+{"level":"info","message":"08:33 WIB | 200 | 80.852945ms | POST | /auth/login/"}
+{"level":"info","message":"HERTZ: Received signal: interrupt\n"}
+{"level":"info","message":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds..."}
+{"level":"info","message":"HERTZ: Execute OnShutdownHooks timeout: error=context deadline exceeded"}
